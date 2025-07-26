@@ -9,7 +9,7 @@ l10n:
 
 **`fill()`** は {{jsxref("Array")}} インスタンスのメソッドで、インデックスの範囲内にある配列のすべての要素を一定の値に変更します。これは変更した配列を返します。
 
-{{InteractiveExample("JavaScript Demo: Array.fill()")}}
+{{InteractiveExample("JavaScript デモ: Array.fill()")}}
 
 ```js interactive-example
 const array1 = [1, 2, 3, 4];
@@ -61,7 +61,8 @@ fill(value, start, end)
 
 `every()` メソッドは[汎用的](/ja/docs/Web/JavaScript/Reference/Global_Objects/Array#汎用的な配列メソッド)です。このメソッドは `this` の値に `length` プロパティと整数のキーを持ったプロパティがあることだけを求めます。文字列も配列風のものですが、文字列は不変なので、このメソッドを適用するのは適していません。
 
-> **メモ:** `Array.prototype.fill()` を空の配列に対して使用すると、配列に変更するものがないので何も変更されません。
+> [!NOTE]
+> `Array.prototype.fill()` を空の配列に対して使用すると、配列に変更するものがないので何も変更されません。
 > 配列を宣言する際に `Array.prototype.fill()` を使用する場合は、スロットを配列に割り当てるようにしてください。
 > [例はこちら](#fill_を使用して空の配列を生成)。
 

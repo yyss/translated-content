@@ -12,7 +12,8 @@ l10n:
 
 対象としてよくあるものは {{domxref("Element")}}、{{domxref("Document")}}、{{domxref("Window")}} ですが、イベントに対応したあらゆるオブジェクトが対象になることができます（{{domxref("IDBRequest")}} など）。
 
-> **メモ:** `addEventListener()` メソッドは、イベントリスナーを登録するための*推奨される*方法です。以下のような長所があります。
+> [!NOTE]
+> `addEventListener()` メソッドは、イベントリスナーを登録するための*推奨される*方法です。以下のような長所があります。
 >
 > - 1 つのイベントに対して複数のハンドラーを追加することができます。これは、ライブラリーや JavaScript モジュール、あるいは他のライブラリーや拡張機能とうまく動作させる必要があるその他の種類のコードで特に有効です。
 > - `onXYZ` プロパティを使用するのとは対照的に、リスナーが起動されるときのフェーズ（キャプチャとバブリング）をより細かく制御できます。
@@ -249,7 +250,7 @@ console.log(someString); // 期待される値: 'Data' （'Data Again' とはな
 ### メモリーの問題
 
 ```js
-const elts = document.getElementsByTagName("*");
+const elems = document.getElementsByTagName("*");
 
 // ケース 1
 for (const elem of elems) {
